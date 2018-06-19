@@ -1,0 +1,19 @@
+[package]
+name = "notificate-notify-monitor"
+version = "0.1.0"
+authors = ["arcnmx"]
+
+description = "Notificate libnotify monitor"
+keywords = []
+
+documentation = "http://arcnmx.github.io/notificate/notificate_notify_monitor"
+repository = "https://github.com/arcnmx/notificate"
+readme = "../README.md"
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "arcnmx/notificate" }
+maintenance = { status = "passively-maintained" }
+
+[dependencies]
+notificate-core = { version = "^0.1.0", path = "../core" }

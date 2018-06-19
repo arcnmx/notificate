@@ -1,0 +1,18 @@
+[package]
+name = "notificate-core"
+version = "0.1.0"
+authors = ["arcnmx"]
+
+description = "Notificate core library"
+keywords = []
+
+documentation = "http://arcnmx.github.io/notificate/notificate_core"
+repository = "https://github.com/arcnmx/notificate"
+readme = "README.md"
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "arcnmx/notificate" }
+maintenance = { status = "passively-maintained" }
+
+[dependencies]

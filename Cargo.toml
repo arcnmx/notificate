@@ -1,0 +1,11 @@
+[workspace]
+members = [
+	"core",
+	"sqs",
+	"notify-client",
+	"notify-server",
+	"notify-monitor",
+	"cmd/send",
+	"cmd/daemon",
+	"cmd/monitor",
+]

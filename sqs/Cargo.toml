@@ -1,0 +1,21 @@
+[package]
+name = "notificate-sqs"
+version = "0.1.0"
+authors = ["arcnmx"]
+
+description = "Notificate AWS SQS backend"
+keywords = []
+
+documentation = "http://arcnmx.github.io/notificate/notificate_notify_monitor"
+repository = "https://github.com/arcnmx/notificate"
+readme = "../README.md"
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "arcnmx/notificate" }
+maintenance = { status = "passively-maintained" }
+
+[dependencies]
+notificate-core = { version = "^0.1.0", path = "../core" }
+rusoto_core = "^0.32.0"
+rusoto_sqs = "^0.32.0"

@@ -1,0 +1,27 @@
+[package]
+name = "notificate-send"
+version = "0.1.0"
+authors = ["arcnmx"]
+
+description = "Notificate command-line utility"
+keywords = []
+
+documentation = "https://github.com/arcnmx/notificate/blob/master/cmd/send/README.md"
+repository = "https://github.com/arcnmx/notificate"
+readme = "README.md"
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "arcnmx/notificate" }
+maintenance = { status = "passively-maintained" }
+
+[dependencies]
+clap = { version = "2.31.2", default-features = false }
+notificate-core = { version = "^0.1.0", path = "../../core" }
+notificate-sqs = { version = "^0.1.0", path = "../../sqs", optional = true }
+notificate-notify-client = { version = "^0.1.0", path = "../../notify-client", optional = true }
+
+[features]
+backend-sqs = ["notificate-sqs"]
+backend-notify = ["notificate-notify-client"]
+default = ["backend-sqs", "backend-notify"]
